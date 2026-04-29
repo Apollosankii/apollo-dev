@@ -6,4 +6,15 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig();
+// Vercel serves static files from the output folder; TanStack Start's client build
+// does not write index.html until prerender runs — without it the SPA fallback
+// pointed at missing HTML and JS never loaded.
+
+export default defineConfig({
+  tanstackStart: {
+    prerender: {
+      enabled: true,
+      crawlLinks: true,
+    },
+  },
+});
