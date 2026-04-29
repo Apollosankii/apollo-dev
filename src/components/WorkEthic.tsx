@@ -23,7 +23,7 @@ export function WorkEthic() {
     <section className="py-28 md:py-36 bg-surface/30 border-y border-border">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -46,7 +46,7 @@ export function WorkEthic() {
           {values.map((v, i) => (
             <motion.div
               key={v.n}
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
