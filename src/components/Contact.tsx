@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MessageCircle, Github, ArrowUpRight } from "lucide-react";
+import { Mail, MessageCircle, Code2 as Github, ArrowUpRight } from "lucide-react";
 
 export function Contact() {
   return (
