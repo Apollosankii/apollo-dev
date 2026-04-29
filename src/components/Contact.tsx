@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MessageCircle, Code2 as Github, ArrowUpRight } from "lucide-react";
+import { Mail, MessageCircle, Phone, ArrowUpRight } from "lucide-react";
 
 export function Contact() {
   return (
@@ -34,26 +34,26 @@ export function Contact() {
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
             <a
-              href="mailto:apollo@example.com"
+              href="mailto:apollo.sankii@gmail.com"
               className="group inline-flex items-center gap-2 bg-primary text-primary-foreground rounded-full px-6 py-3.5 font-medium hover:scale-[1.03] transition-all glow"
             >
               <Mail className="h-4 w-4" />
-              apollo@example.com
+              apollo.sankii@gmail.com
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
             </a>
             <a
-              href="https://wa.me/0000000000"
+              href="https://wa.me/254793649319"
               className="inline-flex items-center gap-2 glass rounded-full px-6 py-3.5 font-medium hover:bg-secondary transition-all"
             >
               <MessageCircle className="h-4 w-4" />
               WhatsApp
             </a>
             <a
-              href="https://github.com"
+              href="tel:+254793649319"
               className="inline-flex items-center gap-2 glass rounded-full px-6 py-3.5 font-medium hover:bg-secondary transition-all"
             >
-              <Github className="h-4 w-4" />
-              GitHub
+              <Phone className="h-4 w-4" />
+              +254 793 649 319
             </a>
           </div>
         </motion.div>
