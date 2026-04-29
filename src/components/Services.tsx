@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Smartphone, Database, CreditCard, Rocket, ArrowUpRight } from "lucide-react";
+import { Smartphone, Database, CreditCard, Rocket, Globe, LayoutDashboard, ArrowUpRight } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 
 const services = [
@@ -8,6 +8,18 @@ const services = [
     title: "Mobile App Development",
     desc: "Cross-platform Android & iOS apps built with React Native — designed to launch, not just demo.",
     points: ["Production-ready architecture", "Native performance", "App Store ready"],
+  },
+  {
+    icon: Globe,
+    title: "Website Development",
+    desc: "Fast, SEO-ready marketing and business sites built with modern React stacks — designed to convert.",
+    points: ["Responsive & accessible", "SEO optimized", "Lightning-fast loads"],
+  },
+  {
+    icon: LayoutDashboard,
+    title: "Web App Development",
+    desc: "Custom dashboards, SaaS products, and internal tools with auth, roles, and real data flows.",
+    points: ["Auth & user roles", "Realtime data", "Admin dashboards"],
   },
   {
     icon: Database,

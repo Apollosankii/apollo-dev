@@ -38,8 +38,9 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.25 }}
           className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed"
         >
-          I'm Apollo — a full-stack mobile developer building production-grade
-          React Native apps with bulletproof backends and live payment systems.
+          I'm Apollo — a full-stack developer building production-grade mobile
+          apps, websites, and web apps with bulletproof backends and live
+          payment systems.
         </motion.p>
 
         <motion.div
