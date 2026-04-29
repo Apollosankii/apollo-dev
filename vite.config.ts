@@ -9,8 +9,12 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 // Vercel serves static files from the output folder; TanStack Start's client build
 // does not write index.html until prerender runs — without it the SPA fallback
 // pointed at missing HTML and JS never loaded.
+//
+// On Vercel, disable the Cloudflare plugin: it rewrites SSR rollup input so the bundle
+// is emitted as dist/server/index.js, but prerender resolves dist/server/server.js.
 
 export default defineConfig({
+  cloudflare: process.env.VERCEL ? false : undefined,
   tanstackStart: {
     prerender: {
       enabled: true,
