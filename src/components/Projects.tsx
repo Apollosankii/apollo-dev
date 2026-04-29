@@ -17,6 +17,8 @@ type Project = {
   github: string;
 };
 
+const GITHUB_PROFILE = "https://github.com/Apollosankii";
+
 const projects: Project[] = [
   {
     name: "PayRoute",
@@ -29,7 +31,7 @@ const projects: Project[] = [
     stack: ["React Native", "Expo", "Supabase", "Paystack"],
     features: ["Paystack checkout", "Auth & roles", "Realtime ledger", "Push notifications"],
     demo: "#",
-    github: "#",
+    github: GITHUB_PROFILE,
   },
   {
     name: "Harvest",
@@ -42,7 +44,7 @@ const projects: Project[] = [
     stack: ["React Native", "Firebase", "Paystack", "AWS S3"],
     features: ["Vendor dashboard", "Split payments", "Order tracking", "Image CDN"],
     demo: "#",
-    github: "#",
+    github: GITHUB_PROFILE,
   },
   {
     name: "Pulse",
@@ -55,7 +57,7 @@ const projects: Project[] = [
     stack: ["React Native", "Expo", "Supabase", "Reanimated"],
     features: ["Offline-first", "Biometric auth", "Live charts", "Streaks engine"],
     demo: "#",
-    github: "#",
+    github: GITHUB_PROFILE,
   },
 ];
 
@@ -148,6 +150,8 @@ export function Projects() {
                   </a>
                   <a
                     href={p.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-sm font-medium px-4 py-2 rounded-full glass hover:bg-secondary transition-all"
                   >
                     <Github className="h-3.5 w-3.5" /> GitHub

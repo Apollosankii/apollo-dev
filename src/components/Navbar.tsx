@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Code2 as GithubIcon } from "lucide-react";
+
+const GITHUB_PROFILE = "https://github.com/Apollosankii";
 
 const links = [
   { href: "#about", label: "About" },
@@ -53,12 +56,23 @@ export function Navbar() {
             ))}
           </nav>
 
-          <a
-            href="#contact"
-            className="text-sm font-medium px-4 py-2 rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-all hover:scale-[1.03]"
-          >
-            Hire me
-          </a>
+          <div className="flex items-center gap-2 shrink-0">
+            <a
+              href={GITHUB_PROFILE}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full glass text-muted-foreground hover:text-foreground transition-colors hover:bg-secondary"
+            >
+              <GithubIcon className="h-[18px] w-[18px]" />
+            </a>
+            <a
+              href="#contact"
+              className="text-sm font-medium px-4 py-2 rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-all hover:scale-[1.03]"
+            >
+              Hire me
+            </a>
+          </div>
         </div>
       </div>
     </motion.header>
