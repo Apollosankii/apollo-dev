@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Code2 as Github } from "lucide-react";
 import { SectionHeader } from "./SectionHeader";
 import p1 from "@/assets/project-1.jpg";
 import p2 from "@/assets/project-2.jpg";
